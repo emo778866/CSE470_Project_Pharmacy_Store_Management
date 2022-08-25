@@ -1,0 +1,342 @@
+/* Basic design for html and body */
+html,
+body {
+    margin: 0;
+    height: 100vh;
+    color: black;
+    font-weight: 500;
+    background-color: #F4F4F5;
+    font-family: 'Nunito', sans-serif;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    top: 18px;
+    right: 10px;
+    position: absolute;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 50px;
+    border-bottom: 2px solid;
+    padding: 12px 0px;
+    color: #5e2195;
+}
+
+.links>a {
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #636b6f;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.lbold {
+    font-size: 20px;
+    font-weight: bold !important;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+/* Center align and changing the font size */
+.basic {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Modifying the anchor tags */
+.basic>a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.basic>a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Design for navbar */
+.topnav {
+    overflow: hidden;
+    background-color: #1C1F22;
+}
+
+.topnav>a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav>a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav>img {
+    float: left;
+    display: block;
+    margin-left: 30px;
+    padding: 13px 14px 10px;
+}
+
+.topnav .float-right {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* Designing the customer part */
+
+/* Adding customer */
+.form-body {
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    max-width: 80%;
+    border-radius: 5px;
+    align-items: center;
+    background: white;
+    justify-content: center;
+}
+
+.form-body form .customer-manufacturer-details,
+.form-body form .employee-details {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap-reverse;
+}
+
+form .customer-manufacturer-details .input-box {
+    margin: 10px;
+    width: calc(100% / 2 - 20px);
+}
+
+.customer-manufacturer-details input {
+    width: 80%;
+    height: 45px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.customer-manufacturer-details .input-box .details {
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+}
+
+.customer-manufacturer-details .input-box input:focus,
+.dropdown:focus {
+    border: 1.2px solid;
+    border-color: #5e2195;
+}
+
+form .button {
+    height: 45px;
+    margin: 35px 0px;
+}
+
+form .button input {
+    width: 100%;
+    border: none;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.dropdown {
+    width: 450px;
+    height: 50px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+/* The alert message box */
+.msg {
+    height: 40px;
+    color: white;
+    margin-bottom: 15px;
+    background-color: #2FB986;
+}
+
+/* The close button */
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 8px 15px 0px 0px;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+/* Removing customer */
+
+table {
+    width: 80%;
+    overflow: hidden;
+    border-spacing: 0;
+    margin: 50px auto 35px;
+    border-radius: 12px 12px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+}
+
+td,
+th {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+th {
+    color: black;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+tr {
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+.delete,
+.update {
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    background-color: red;
+}
+
+
+/* Designing the human resource part */
+
+.left {
+    text-align: center;
+}
+
+.left .month,
+.year,
+.btn {
+    margin: 40px 20px 0px 20px;
+}
+
+.year,
+.month span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right h1 {
+    text-align: center;
+}
+
+.left .btn input {
+    width: 22%;
+    height: 35px;
+    border: none;
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.loan-and-expense .center {
+    text-align: center;
+    position: relative;
+    margin: 3% 40% 0% 40%;
+}
+
+.loan-and-expense .atag {
+    padding: 5px;
+    background-color: #1C1F22;
+}
+
+.loan-and-expense .center span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.loan-and-expense .center a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Designing the human resource part */
+
+.search {
+    position: relative;
+    text-align: center;
+    margin: 16% 0% 19% 0%;
+}
+
+.search input {
+    width: 250px;
+    height: 35px;
+    margin-bottom: 10px;
+}
